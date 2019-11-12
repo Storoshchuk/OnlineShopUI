@@ -1,0 +1,9 @@
+<div class="row">
+    <div class="input-field col s12">
+      <input id="first_name2" type="text" class="validate" [(ngModel)]="taskDescription">
+      <label class="active" for="first_name2">Task description</label>
+    </div>
+
+    <a class="waves-effect waves-light btn" (click)="onClick()">Save</a>
+    <a id="close_btn" class="waves-effect waves-light btn" routerLink="/tasks">Close</a>
+  </div>

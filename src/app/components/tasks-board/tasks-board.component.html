@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="input-field col s6">
+    <input id="first_name2" type="text" class="validate" [(ngModel)]="searchStr">
+    <label class="active" for="first_name2">Find by description</label>
+  </div>
+
+  <a id="create_btn" class="waves-effect waves-light btn"  routerLink="/create" >Add task</a>
+</div>
+
+<div class="row">
+<app-task 
+*ngFor="let t of tasks | search:searchStr"
+[task] = "t"
+></app-task>
+</div>
